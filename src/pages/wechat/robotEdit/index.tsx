@@ -160,9 +160,9 @@ const Robots: React.FC = () => {
 
   const columns: ProColumns<API.RobotRule>[] = [
     {
-      title: '规则ID',
-      dataIndex: 'id',
-      editable: false,
+      title: '规则code',
+      dataIndex: 'rule_code',
+      readonly: true,
     },
     {
       title: '抓取目标',
@@ -174,13 +174,8 @@ const Robots: React.FC = () => {
       dataIndex: 'group_member_nickname',
     },
     {
-      title: '规则code',
-      dataIndex: 'rule_code',
-      readonly: true,
-    },
-    {
-      title: '规则名称',
-      dataIndex: 'rule_name',
+      title: '消息发送至',
+      dataIndex: 'forward_nickname',
     },
     {
       title: '操作',
