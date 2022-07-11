@@ -107,7 +107,7 @@ const Robots: React.FC = () => {
 
   const onSubmitModalForm = async (value: any) => {
     value.robot_id = queryInfo.state.r;
-    console.log(value);
+    console.log(editType);
     if (editType === 1) {
       const success = await handleAdd(value as API.RobotRule);
       if (success) {
@@ -249,6 +249,7 @@ const Robots: React.FC = () => {
             onClick={() => {
               setCurrentRow(undefined);
               handleUpdateModalVisible(true);
+              setEditType(1)
               setEditModatTitle('新建规则');
               console.log(wechatContacts?.select);
             }}
