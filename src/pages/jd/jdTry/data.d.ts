@@ -9,6 +9,7 @@ export type ProductItem = {
   large_image: string;
   shop_id: number;
   shop_name: string;
+  trial_url: string;
   activity_start_time: number;
   create_time?: string;
   update_time?: string;

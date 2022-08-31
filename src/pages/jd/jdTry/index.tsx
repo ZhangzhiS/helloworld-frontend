@@ -44,7 +44,8 @@ const Robots: React.FC = () => {
           key="copy"
           copyable={
             {
-              text: 'https://pro.m.jd.com/mall/active/3mpGVQDhvLsMvKfZZumWPQyWt83L/index.html?has_native=0&activityId=' + record.activity_id
+              // text: 'https://pro.m.jd.com/mall/active/3mpGVQDhvLsMvKfZZumWPQyWt83L/index.html?has_native=0&activityId=' + record.activity_id
+              text: record.trial_url
             }
           }>
         </Paragraph>
